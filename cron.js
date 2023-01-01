@@ -16,7 +16,6 @@ function start() {
         cron = setInterval(() => {
             timer();
         }, tempo);
-
     }
     limiteClick++
     console.log(limiteClick)
@@ -59,9 +58,6 @@ function timer() {
     const formatar = (hh < 10 ? '0' + hh : hh) +
         ':' + (mm < 10 ? '0' + mm : mm) +
         ':' + (ss < 10 ? '0' + ss : ss);
-
-    //Insere o valor tratado no elemento counter
-    // document.getElementById('counter').innerText = formatar;
 
     zeraContador.textContent = formatar
 
